@@ -1,0 +1,274 @@
+source('~/.active-rstudio-document', echo=TRUE)
+source('~/.active-rstudio-document', echo=TRUE)
+source('~/.active-rstudio-document', echo=TRUE)
+source('~/.active-rstudio-document', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/packageinstall.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/packageinstall.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/packageinstall.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/packageinstall.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/packageinstall.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/packageinstall.R', echo=TRUE)
+install.packages("tm")
+install.packages("tm")
+install.packages("Snowballc")
+y
+Perhaps you meant ‘SnowballC’ ?
+install.packages("SnowballC")
+install.packages("wordcloud")
+install.packages("RColorBrewer")
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+wordcloud(words = d$word, freq = d$freq, min.freq = 2,
+max.words = 50, random.order = FALSE, rot.per = 0.35,
+colors = brewer.pal(8, "Dark2"))
+wordcloud(words = d$word, freq = d$freq, min.freq = 0.95,
+max.words = 50, random.order = FALSE, rot.per = 0.35,
+colors = brewer.pal(8, "Dark2"))
+wordcloud(words = d$word, freq = d$freq, min.freq = 1,
+max.words = 50, random.order = FALSE, rot.per = 0.35,
+colors = brewer.pal(8, "Dark2"))
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/wc.R', echo=TRUE)
+#Load
+library("tm")
+library("SnowballC")
+library("wordcloud")
+library("RColorBrewer")
+#load sampletext from file
+filePath <- "https://shared.djambred.my.id/sampletext.txt"
+text <- readLines(file.choose())
+#set data to corpus
+docs <- Corpus(VectorSource(text))
+#inspect doc
+inspect(docs)
+#text transformation
+toSpace <- content_transformer(function(x , pattern) gsub(pattern, " ", x ))
+docs <- tm_map(docs, toSpace, "/")
+docs <- tm_map(docs, toSpace, "@")
+docs <- tm_map(docs, toSpace, "\\|")
+#Convert the text to lower case
+docs <- tm_map(docs, content_transformer(tolower))
+# Remove Numbers
+docs <- tm_map(docs, removeNumbers)
+# Remove english common stopwords
+docs <- tm_map(docs, removeWords, stopwords("english"))
+# Remove your own stop word
+docs <- tm_map(docs, removeWords, c("together", "freedom"))
+# Remove puntuations
+docs <- tm_map(docs, removePunctuation)
+# Eliminate extra white spaces
+docs <- tm_map(docs, stripWhitespace)
+# Make Matrix text with frequen
+dtm <- TermDocumentMatrix(docs)
+m <- as.matrix(dtm)
+v <- sort(rowSums(m),decreasing = TRUE)
+d <- data.frame(word = names(v), freq = v)
+head(d, 10)
+# Make wordcloud
+set.seed(1234)
+wordcloud(words = d$word, freq = d$freq, min.freq = 1,
+max.words = 50, random.order = FALSE, rot.per = 0.35,
+colors = brewer.pal(8, "Dark2"))
+#Load
+library("tm")
+library("SnowballC")
+library("wordcloud")
+library("RColorBrewer")
+#load sampletext from file
+filePath <- "https://shared.djambred.my.id/sampletext.txt"
+text <- readLines(file.choose())
+#set data to corpus
+docs <- Corpus(VectorSource(text))
+#inspect doc
+inspect(docs)
+#text transformation
+toSpace <- content_transformer(function(x , pattern) gsub(pattern, " ", x ))
+docs <- tm_map(docs, toSpace, "/")
+docs <- tm_map(docs, toSpace, "@")
+docs <- tm_map(docs, toSpace, "\\|")
+#Convert the text to lower case
+docs <- tm_map(docs, content_transformer(tolower))
+# Remove Numbers
+docs <- tm_map(docs, removeNumbers)
+# Remove english common stopwords
+docs <- tm_map(docs, removeWords, stopwords("english"))
+# Remove your own stop word
+docs <- tm_map(docs, removeWords, c("together", "freedom"))
+# Remove puntuations
+docs <- tm_map(docs, removePunctuation)
+# Eliminate extra white spaces
+docs <- tm_map(docs, stripWhitespace)
+# Make Matrix text with frequen
+dtm <- TermDocumentMatrix(docs)
+m <- as.matrix(dtm)
+v <- sort(rowSums(m),decreasing = TRUE)
+d <- data.frame(word = names(v), freq = v)
+head(d, 10)
+# Make wordcloud
+set.seed(1234)
+wordcloud(words = d$word, freq = d$freq, min.freq = 1,
+max.words = 50, random.order = FALSE, rot.per = 0.35,
+colors = brewer.pal(8, "Dark2"))
+#INSTALL
+install.packages("tm") #for text mining
+install.packages("Snowballc") #for text stemming
+source('D:/MyStudy/SEMESTER 4/SESUDAH UTS/MACHINE LEARNING/PERT 12/pert12/packageinstall.R', echo=TRUE)
+#load sampletext from file
+filePath <- "https://shared.djambred.my.id/sampletext.txt"
+#Load
+library("tm")
+library("SnowballC")
+library("wordcloud")
+library("RColorBrewer")
+#load sampletext from file
+filePath <- "https://shared.djambred.my.id/sampletext.txt"
+text <- readLines(file.choose())
+#set data to corpus
+docs <- Corpus(VectorSource(text))
+#inspect doc
+inspect(docs)
+#text transformation
+toSpace <- content_transformer(function(x , pattern) gsub(pattern, " ", x ))
+docs <- tm_map(docs, toSpace, "/")
+docs <- tm_map(docs, toSpace, "@")
+docs <- tm_map(docs, toSpace, "\\|")
+#Convert the text to lower case
+docs <- tm_map(docs, content_transformer(tolower))
+# Remove Numbers
+docs <- tm_map(docs, removeNumbers)
+# Remove english common stopwords
+docs <- tm_map(docs, removeWords, stopwords("english"))
+# Remove your own stop word
+docs <- tm_map(docs, removeWords, c("together", "freedom"))
+# Remove puntuations
+docs <- tm_map(docs, removePunctuation)
+# Eliminate extra white spaces
+docs <- tm_map(docs, stripWhitespace)
+# Make Matrix text with frequen
+dtm <- TermDocumentMatrix(docs)
+m <- as.matrix(dtm)
+v <- sort(rowSums(m),decreasing = TRUE)
+d <- data.frame(word = names(v), freq = v)
+head(d, 10)
+# Make wordcloud
+set.seed(1234)
+wordcloud(words = d$word, freq = d$freq, min.freq = 1,
+max.words = 50, random.order = FALSE, rot.per = 0.35,
+colors = brewer.pal(8, "Dark2"))
+#tahap 1
+# Install
+install.packages("tm")  # for text mining
+install.packages("SnowballC") # for text stemming
+install.packages("wordcloud") # word-cloud generator
+install.packages("RColorBrewer") # color palettes
+# Load
+library("tm")
+library("SnowballC")
+library("wordcloud")
+library("RColorBrewer")
+library(stringr)
+setwd("F:/DOC/lionGithub")
+docs<-readLines("datalion.csv")
+# Load the data as a corpus
+docs <- Corpus(VectorSource(docs))
+#Inspect the content of the document
+inspect(docs)
+#Replacing "/", "@" and "|" with space:
+toSpace <- content_transformer(function (x , pattern ) gsub(pattern, " ", x))
+docs <- tm_map(docs, toSpace, "/")
+docs <- tm_map(docs, toSpace, "@")
+docs <- tm_map(docs, toSpace, "\\|")
+#Cleaning the text
+# Convert the text to lower case
+docs <- tm_map(docs, content_transformer(tolower))
+#Remove punctuation
+docs <- tm_map(docs, toSpace, "[[:punct:]]")
+#Remove numbers
+docs <- tm_map(docs, toSpace, "[[:digit:]]")
+# add two extra stop words: "available" and "via"
+myStopwords = readLines("stopword_en.csv")
+# remove stopwords from corpus
+docs <- tm_map(docs, removeWords, myStopwords)
+# Remove your own stop word
+# specify your stopwords as a character vector
+docs <- tm_map(docs, removeWords, c("flight","you","air","lion","airline","reviewed"))
+# Eliminate extra white spaces
+docs <- tm_map(docs, stripWhitespace)
+# Remove URL
+removeURL <- function(x) gsub("http[[:alnum:]]*", " ", x)
+docs <- tm_map(docs, removeURL)
+#Replace words
+docs <- tm_map(docs, gsub, pattern="Howver", replacement="However")
+#Build a term-document matrix
+dtm <- TermDocumentMatrix(docs)
+m <- as.matrix(dtm)
+v <- sort(rowSums(m),decreasing=TRUE)
+d <- data.frame(word = names(v),freq=v)
+head(d, 15)
+#Generate the Word cloud
+set.seed(1234)
+wordcloud(words = d$word, freq = d$freq, min.freq = 1,
+max.words=50, random.order=FALSE, rot.per=0.35,
+colors=brewer.pal(8, "Dark2"))
+dataframe<-data.frame(text=unlist(sapply(docs, `[`)), stringsAsFactors=F)
+write.csv(dataframe, "F:/DOC/lionGithub/lion2.csv")
+save.image()
+#tahap 2
+setwd("F:/DOC/lionGithub")
+kalimat2<-read.csv("lion2.csv",header=TRUE)
+#skoring
+positif <- scan("F:/DOC/lionGithub/positive-words.txt",what="character",comment.char=";")
+negatif <- scan("F:/DOC/lionGithub/negative-words.txt",what="character",comment.char=";")
+kata.positif = c(positif, "is near to")
+kata.negatif = c(negatif, "cant")
+score.sentiment = function(kalimat2, kata.positif, kata.negatif, .progress='none')
+{
+require(plyr)
+require(stringr)
+scores = laply(kalimat2, function(kalimat, kata.positif, kata.negatif) {
+kalimat = gsub('[[:punct:]]', '', kalimat)
+kalimat = gsub('[[:cntrl:]]', '', kalimat)
+kalimat = gsub('\\d+', '', kalimat)
+kalimat = tolower(kalimat)
+list.kata = str_split(kalimat, '\\s+')
+kata2 = unlist(list.kata)
+positif.matches = match(kata2, kata.positif)
+negatif.matches = match(kata2, kata.negatif)
+positif.matches = !is.na(positif.matches)
+negatif.matches = !is.na(negatif.matches)
+score = sum(positif.matches) - (sum(negatif.matches))
+return(score)
+}, kata.positif, kata.negatif, .progress=.progress )
+scores.df = data.frame(score=scores, text=kalimat2)
+return(scores.df)
+}
+hasil = score.sentiment(kalimat2$text, kata.positif, kata.negatif)
+View(hasil)
+#CONVERT SCORE TO SENTIMENT
+hasil$klasifikasi<- ifelse(hasil$score<0, "Negatif",ifelse(hasil$score==0,"Netral","Positif"))
+hasil$klasifikasi
+View(hasil)
